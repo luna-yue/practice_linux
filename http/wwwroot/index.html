@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我的网站</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+		font-size:64px;
+		margin:0px;
+		}
+    .box {
+		
+      width: 566px;
+      height: 333px;
+      overflow: hidden;
+      margin: 0px auto;
+	  margin-bottom:50px;
+      position: relative;
+    }
+ 
+    .box>img {
+      width: 566px;
+      height: 333px;
+    }
+ 
+    .show {
+      position: absolute;
+      list-style: none;
+      overflow: hidden;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+	  
+    }
+
+ 
+    .sb {
+      float: left;
+      width: 10px;
+      height: 10px;
+      background-color: papayawhip;
+      border-radius: 50%;
+      color: powderblue;
+      margin-left: 10px;
+    }
+
+
+    .le {
+     display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+      float:left;
+    }
+	
+
+.leader {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  background-color: white;
+}
+
+.leader {
+  float:left;
+  width:100%;
+
+ 
+}
+
+.leader>a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover:not(.active) {
+  background-color: red;
+}
+li a:hover:not(.active) {
+  background-color: red;
+}
+.active {
+  background-color:grey;
+}
+
+
+  </style>
+</head>
+ 
+<body>
+<div class="header">
+<p align="center" >《只狼》游戏赏析</p>
+  </div>
+  <div class="box">
+  <p align="center">游戏美图赏析</p>
+    <img src="./img/video2.jpg" alt="">
+    <img src="./img/video3.jpg" alt="">
+    <img src="./img/video4.jpg" alt="">
+    <img src="./img/video5.jpg" alt="">
+    <ul class="show">
+      <li class="sb"></li>
+      <li class="sb"></li>
+      <li class="sb"></li>
+      <li class="sb"></li>
+    </ul>
+  </div>
+<ul class="leader">
+  <li class="le"><a  href="ashina.html">游戏角色弦一郎介绍</a></li>
+  <li class="le"><a href="introduce.html">游戏介绍</a></li>
+  <li class="le"><a href="register.html">注册steam账号游玩只狼</a></li>
+  <li class="le" style="float:right" ><a href="index.html" class="active">返回主页面</a></li>
+</ul>
+</body>
+<script>
+  var imgs = document.querySelectorAll(".box img");
+  var btn = document.querySelectorAll(".box li");
+  var num = 0;
+  btn[num].style.backgroundColor = "red";
+  var timer = setInterval(roll, 2000)
+  function roll() {
+    num++;
+    num >= imgs.length ? num = 0 : num = num;
+    imgs.forEach((item, index) => {
+      item.style.display = 'none'
+      btn[index].style.background = 'papayawhip'
+ 
+    })
+    imgs[num].style.display = 'block' 
+    btn[num].style.background = 'red'
+  }
+ 
+ 
+ 
+  btn.forEach(function (item, index) {
+    item.onmouseenter = function () {
+      clearInterval(timer)
+      num = index - 1
+      roll()
+    }
+    item.onmouseleave = function () {
+      timer = setInterval(roll, 2000)
+    }
+  })
+</script>
+ 
+</html>

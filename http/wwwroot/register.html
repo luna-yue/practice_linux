@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+    .le {
+     display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+      float:left;
+    }
+	
+
+.leader {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  background-color:white;
+}
+
+.leader {
+  float:left;
+  width:100%;
+
+  
+}
+
+.leader>a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover:not(.active) {
+  background-color: red;
+}
+li a:hover:not(.active) {
+  background-color: red;
+}
+.active {
+  background-color: grey;
+}
+.gapc{
+	margin:100px;
+	left:40%;
+	top:40%;
+	float:left;
+	}
+</style>
+</head>
+
+<body>
+<ul class="leader">
+  <li class="le"><a  href="ashina.html">游戏角色弦一郎介绍</a></li>
+  <li class="le"><a  href="introduce.html">游戏介绍</a></li>
+  <li class="le"><a class="active" href="register.html">注册steam账号游玩只狼</a></li>
+  <li class="le" style="float:right"><a href="index.html">返回主页面</a></li>
+</ul>
+<div class="gapc">
+Username:<input type="text" id="txt">
+Password:<input type="text" id="txt">
+</br>
+ 
+<input type="button" value="注册！" onclick="test()"/>
+</div> 
+ 
+<SCRIPT LANGUAGE="JavaScript">
+function
+ test(){       
+var s =document.getElementById("txt");
+location.href="url2.html?"+"txt="+encodeURI(s.value);
+ }
+ 
+</SCRIPT>
+</body>
+</html>
