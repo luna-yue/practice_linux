@@ -10,3 +10,13 @@
 [Error][2024-9-5 14:11:43] 打 no found
 [Info][2024-9-5 14:11:43] get a new link..., sockfd: 4, client ip: 49.232.249.2, client port: 35848
 [Info][2024-9-5 14:11:45] a client quit, ip: >49.232.249.2
+[Info][2024-11-26 23:21:38] socket create done
+[Info][2024-11-26 23:21:38] setsockopt done
+[Info][2024-11-26 23:21:38] bind done
+[Info][2024-11-26 23:21:38] listen done
+[Info][2024-11-26 23:21:39] server start
+[Info][2024-11-26 23:23:12] socket create done
+[Info][2024-11-26 23:23:12] setsockopt done
+[Info][2024-11-26 23:23:12] bind done
+[Info][2024-11-26 23:23:12] listen done
+[Info][2024-11-26 23:23:12] server start
