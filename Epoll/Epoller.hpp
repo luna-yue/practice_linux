@@ -1,4 +1,6 @@
+#include"Log.hpp"
 #include<sys/epoll.h>
+#include<string.h>
 class Epoller{
     public:
     Epoller(){
