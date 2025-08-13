@@ -1,4 +1,4 @@
-# Install script for directory: /home/luna/reactor
+# Install script for directory: /home/luna/practice/reactor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/luna/reactor/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/luna/practice/reactor/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

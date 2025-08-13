@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luna/reactor
+CMAKE_SOURCE_DIR = /home/luna/practice/reactor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luna/reactor
+CMAKE_BINARY_DIR = /home/luna/practice/reactor
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luna/reactor/CMakeFiles /home/luna/reactor//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luna/practice/reactor/CMakeFiles /home/luna/practice/reactor//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luna/reactor/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luna/practice/reactor/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
